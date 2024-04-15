@@ -105,7 +105,7 @@ const showComponent3=()=>{
             Delete component 1
           </button>
           <button className="btn btn-outline-warning m-2" onClick={showComponent1}>
-            Show component 1
+             Show component 1
           </button>
         </span>
       </div>

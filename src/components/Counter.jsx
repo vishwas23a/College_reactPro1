@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 
 function Counter(props) {
 let {number,increase,decrease}=props;

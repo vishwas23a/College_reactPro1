@@ -76,7 +76,15 @@ function CounterMain() {
     setActive(activeCount);
   }, [count1, count2, count3]);
   
-
+const showComponent1=()=>{
+  setRemove1(true)
+}
+const showComponent2=()=>{
+  setRemove2(true)
+}
+const showComponent3=()=>[
+  setCount3(true)
+]
   
   return (
     <div>
@@ -89,35 +97,44 @@ function CounterMain() {
       <h2 className="d-flex justify-content-center text-danger fs-1">{active }</h2>
       <div>
         {remove1 ? <Counter number={count1} increase={increase1} decrease={decrease1} />: ""}
-        <span className="container col-4 d-flex justify-content-center">
+        <span className="container col-6 d-flex justify-content-center">
           <button className="btn btn-outline-warning m-2" onClick={resetCount1}>
             Reset Count 1
           </button>
           <button className="btn btn-outline-warning m-2" onClick={removeCount1}>
             Delete component 1
           </button>
+          <button className="btn btn-outline-warning m-2" onClick={showComponent1}>
+            Show component 1
+          </button>
         </span>
       </div>
 
       <div>
         { remove2 ?<Counter number={count2} increase={increase2} decrease={decrease2}/>:""}
-        <span className="container col-4 d-flex justify-content-center">
+        <span className="container col-6 d-flex justify-content-center">
           <button className="btn btn-outline-warning m-2" onClick={resetCount2}>
             Reset Count 1
           </button>{" "}
           <button className="btn btn-outline-warning m-2" onClick={removeCount2}>
             Delete component 2
           </button>
+          <button className="btn btn-outline-warning m-2" onClick={showComponent2}>
+            Show component 2
+          </button>
         </span>
       </div>
       <div>
         { remove3? <Counter number={count3} increase={increase3} decrease={decrease3} />:""}
-        <span className="container col-4 d-flex justify-content-center">
+        <span className="container col-6 d-flex justify-content-center">
           <button className="btn btn-outline-warning m-2" onClick={resetCount3}>
             Reset Count 1
           </button>{" "}
           <button className="btn btn-outline-warning m-2" onClick={removeCount3}>
             Delete coumponent 3
+          </button>
+          <button className="btn btn-outline-warning m-2" onClick={showComponent3}>
+            Show component 3
           </button>
         </span>
       </div>

@@ -82,9 +82,9 @@ const showComponent1=()=>{
 const showComponent2=()=>{
   setRemove2(true)
 }
-const showComponent3=()=>[
-  setCount3(true)
-]
+const showComponent3=()=>{
+  setRemove3(true)
+}
   
   return (
     <div>

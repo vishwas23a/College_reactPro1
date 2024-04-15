@@ -1,18 +1,21 @@
 
-
-
-import Comp2 from './components/Comp2'
-import Page1 from './components/Page1'
+import CounterMain from '../CounterMain'
+import Controlled from './Controlled'
+import Info from './components/Info'
 
 function App() {
+  let lang=["java","javascript","kotlin","python"]
 
 
-  return (
-    <>
-    <h1>hello</h1>
-    <Page1/>
-    <Comp2/>
-    </>
+
+ return(
+  // <Controlled/>
+  <div>
+
+  {/* <Info data={lang}/> */}
+  <CounterMain/>
+  
+  </div>
   )
 }
 

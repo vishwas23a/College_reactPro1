@@ -94,7 +94,7 @@ const showComponent3=()=>{
       >
         Reset All
       </button>
-      <h2 className="d-flex justify-content-center text-danger fs-1">{active }</h2>
+      <h2 className="d-flex justify-content-center text-danger fs-1">Active:-{active }</h2>
       <div>
         {remove1 ? <Counter number={count1} increase={increase1} decrease={decrease1} />: ""}
         <span className="container col-6 d-flex justify-content-center">
@@ -131,7 +131,7 @@ const showComponent3=()=>{
             Reset Count 1
           </button>{" "}
           <button className="btn btn-outline-warning m-2" onClick={removeCount3}>
-            Delete coumponent 3
+            Delete component 3
           </button>
           <button className="btn btn-outline-warning m-2" onClick={showComponent3}>
             Show component 3

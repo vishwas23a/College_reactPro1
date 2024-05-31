@@ -16,6 +16,11 @@ import Product2 from './components/Product2'
 import Product3 from './components/Product3'
 import Student from './components/Student'
 import StudentInfo from './components/StudentInfo'
+import PracState from './components/PracState'
+import PracUseeffect from './components/PracUseeffect'
+import Reducer from './components/Reducer'
+import Context from './components/Context'
+import Login from './components/Login'
 
 function App() {
   // let lang=["java","javascript","kotlin","python"]
@@ -25,7 +30,13 @@ function App() {
  return(
   // <Controlled/>
   <div>
-<Navbar/>
+    {/* <CounterMain/> */}
+    {/* <PracState/> */}
+    {/* <PracUseeffect/> */}
+    {/* <Reducer/> */}
+    {/* <Context/> */}
+    <Login/>
+{/* <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/CardHandler' element={<CardHandler/>}/>
@@ -43,8 +54,8 @@ function App() {
 
     </Routes>
   {/* <Info data={lang}/> */}
-  {/* <CounterMain/> */}
-  {/* <NewCounterHandle/> */}
+  {/* <CounterMain/> 
+  <NewCounterHandle/> */}
   {/* <CardHandler/> */}
   
   </div>
